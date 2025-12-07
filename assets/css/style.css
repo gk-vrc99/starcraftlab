@@ -1266,11 +1266,29 @@ General Styles - Owlcarousel
 }
 
 .navbar-custom .navbar-brand {
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   font-weight: 400;
   font-size: 22px;
   color: #fff;
 }
+
+/* Make brand uppercase but allow custom scaling */
+.navbar-custom .navbar-brand {
+    text-transform: uppercase;
+}
+
+/* Bigger first letter (the S) */
+.navbar-custom .navbar-brand::first-letter {
+    font-size: 28px; /* tweak until it feels right */
+}
+
+/* Bigger L inside the word */
+.navbar-custom .navbar-brand .big {
+    font-size: 28px; /* same tweak as above */
+    display: inline-block;
+    vertical-align: baseline;
+}
+
 
 .navbar-custom .nav li > a {
   position: relative;
