@@ -2929,6 +2929,13 @@ Google map
 /* === Rotator fixed width === */
 .rotate-wrapper {
     display: inline-block;
-    min-width: 6ch; /* adjust for longest word */
-    text-align: left; /* optional */
+    width: 6ch; 
+    vertical-align: bottom;
+    text-align: left;
 }
+
+.rotate-wrapper .rotate {
+    display: block;
+    width: 100%;
+}
+
