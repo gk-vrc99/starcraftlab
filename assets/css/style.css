@@ -2928,3 +2928,12 @@ Google map
     width: 100%;
   }
 }
+
+.rotate-wrapper {
+    display: inline-block;
+    min-width: 6ch; /* adjust to longest word */
+}
+.rotate {
+    display: inline-block;
+}
+
