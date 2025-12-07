@@ -66,7 +66,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         });
 
         $(window).scroll(function() {
-            /* effectsHomeSection(homeSection, this); /*
+            effectsHomeSection(homeSection, this);
             navbarAnimation(navbar, homeSection, navHeight);
         });
 
