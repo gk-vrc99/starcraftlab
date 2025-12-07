@@ -2931,8 +2931,11 @@ Google map
 
 .rotate-wrapper {
     display: inline-block;
-    min-width: 6ch; /* adjust to longest word */
+    width: 6ch; /* or enough for the longest word */
+    text-align: left; /* keeps text aligned */
+    vertical-align: top; /* avoids vertical shift */
 }
+
 .rotate {
     display: inline-block;
 }
