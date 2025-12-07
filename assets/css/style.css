@@ -1247,7 +1247,7 @@ General Styles - Owlcarousel
   border-radius: 0;
   z-index: 1000;
   font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 3px;
   font-size: 11px;
   transition: background, padding 0.4s ease-in-out 0s;
