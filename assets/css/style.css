@@ -2925,3 +2925,10 @@ Google map
     width: 100%;
   }
 }
+
+/* === Rotator fixed width === */
+.rotate-wrapper {
+    display: inline-block;
+    min-width: 6ch; /* adjust for longest word */
+    text-align: left; /* optional */
+}
