@@ -2946,4 +2946,12 @@ Google map
   text-align: justify;
 }
 
+html, body {
+  scroll-behavior: auto !important;
+}
+
+.home-section, .module-small {
+  transform: none !important;
+  transition: none !important;
+}
 
