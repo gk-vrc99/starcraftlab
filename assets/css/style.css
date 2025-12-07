@@ -903,8 +903,11 @@ blockquote {
 }
 
 .rotate {
-  text-shadow: none !important;
+  display: inline-block;
+  min-width: 6ch; /* match the longest word */
+  text-align: left; /* keeps the word left-aligned inside the fixed width */
 }
+
 
 .module-title {
   position: relative;
@@ -2925,17 +2928,3 @@ Google map
     width: 100%;
   }
 }
-
-/* === Rotator fixed width === */
-.rotate-wrapper {
-    display: inline-block;
-    width: 6ch; 
-    vertical-align: bottom;
-    text-align: left;
-}
-
-.rotate-wrapper .rotate {
-    display: block;
-    width: 100%;
-}
-
