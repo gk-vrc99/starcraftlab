@@ -2940,3 +2940,10 @@ Google map
     display: inline-block;
 }
 
+/* Justify footer column text */
+.module-small.bg-dark .widget p,
+.module-small.bg-dark .widget li {
+  text-align: justify;
+}
+
+
