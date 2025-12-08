@@ -1,5 +1,29 @@
 console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55');
 
+// Cache-busting for CSS and JS
+(function() {
+    var timestamp = new Date().getTime();
+
+    // Update CSS links
+    var cssLinks = document.querySelectorAll('link[rel="stylesheet"]');
+    cssLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href) {
+            link.setAttribute('href', href.split('?')[0] + '?v=' + timestamp);
+        }
+    });
+
+    // Update JS scripts (skip this main.js itself to avoid recursion)
+    var jsScripts = document.querySelectorAll('script[src]');
+    jsScripts.forEach(function(script) {
+        var src = script.getAttribute('src');
+        if (src && !src.includes('main.js')) {
+            script.setAttribute('src', src.split('?')[0] + '?v=' + timestamp);
+        }
+    });
+})();
+
+
 /* ---------------------------------------------- /*
  * Preloader
  /* ---------------------------------------------- */
