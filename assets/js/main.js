@@ -29,9 +29,11 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
  /* ---------------------------------------------- */
 (function(){
     $(window).on('load', function() {
-        $('.loader').fadeOut();
-        $('.page-loader').delay(350).fadeOut('slow');
+    $('.loader').fadeOut();
+    $('.page-loader').delay(350).fadeOut('slow', function() {
+        $('body').css('visibility', 'visible'); // <- make body visible
     });
+});
 
     $(document).ready(function() {
 
